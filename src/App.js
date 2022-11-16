@@ -1,5 +1,4 @@
 import './App.css';
-// import { Navigate, useRoutes } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Header from './components/Header';
@@ -12,7 +11,6 @@ function App() {
     <>
       <Header />
       <div className="App">
-        {/* <div className="content">{routing}</div> */}
         <Routes>
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
