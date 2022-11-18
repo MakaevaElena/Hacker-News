@@ -25,7 +25,7 @@ async function getStories(storyIds) {
   console.log(stories);
   return stories;
 }
-export const fetchStories = createAsyncThunk('news/fetchStory', async (storyIds) =>
+export const fetchStories = createAsyncThunk('news/fetchStories', async (storyIds) =>
   getStories(storyIds),
 );
 
